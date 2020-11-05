@@ -158,7 +158,7 @@ export default class App extends Component {
                 if (mathOperation == '/' && secondInput == 0.0) {
                     this.showToast('cant divide by 0');
                 } else {
-                    let result = makeCount[mathOperation](firstInput, secondInput);
+                    let result = makeCount[mathOperation](parseFloat(firstInput), parseFloat(secondInput));
                     this.setState({
                         operationSign: '',
                         calculations: result,
@@ -288,14 +288,14 @@ export default class App extends Component {
                         this.state.landscape == false ?
                             portraitButtons.map((el) => {
                                 return (
-                                    <OwnTouchableOpacity content={el.content} color={el.color} width={el.width}
+                                    <OwnTouchableOpacity key={el.content} content={el.content} color={el.color} width={el.width}
                                                          onBtnPress={this.buttonPressed.bind(this, el.content)}/>
                                 );
                             })
                             :
                             landscapeButtons.map((el) => {
                                 return (
-                                    <OwnTouchableOpacity content={el.content} color={el.color} width={el.width}
+                                    <OwnTouchableOpacity key={el.content} content={el.content} color={el.color} width={el.width}
                                                          onBtnPress={this.buttonPressed.bind(this, el.content)}/>
                                 );
                             })
