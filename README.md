@@ -7,5 +7,7 @@ Used libraries: <br>
 - math-expression-evaluator
 - react-native-splash-screen
 
-Screens: <br>
+Screens: <br><br>
+<img src="https://github.com/fay3r/calculator_ReactNative/blob/master/img/1.png?raw=true" width="300" height="500"/>
+<img src="https://github.com/fay3r/calculator_ReactNative/blob/master/img/2.png?raw=true" width="500" height="300"/>
 
